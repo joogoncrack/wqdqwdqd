@@ -15,4 +15,3 @@ function onKeyDown(key)
 end
 
 mouse.KeyDown:connect(onKeyDown)
-end)
