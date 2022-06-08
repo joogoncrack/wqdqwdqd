@@ -1,0 +1,18 @@
+	local sound = Instance.new("Sound")
+	sound.SoundId = "rbxassetid://413861777"
+	sound.Parent = game:GetService("SoundService")
+	sound:Play()
+local Tool = script.Parent
+local mouse = game.Players.LocalPlayer:GetMouse()
+
+function onKeyDown(key)
+ if (key~=nil) then
+  key = key:lower()
+  if (key=="p")  then
+   game.Players.LocalPlayer.Character.Humanoid.Health = 0
+  end
+ end
+end
+
+mouse.KeyDown:connect(onKeyDown)
+end)
